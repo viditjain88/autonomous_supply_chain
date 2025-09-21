@@ -35,3 +35,19 @@ This solution uses a multi-agent system where specialized AI agents collaborate 
 
 ## Why This Matters
 Moving from single-purpose AI models to collaborative, intelligent agents is the next frontier in enterprise AI. This approach enables truly autonomous business processes that can handle complexity and deliver significant, measurable value.
+
+## Interactive Showcase
+To see the agents in action, you can run the interactive showcase. This script will prompt you for inputs and then run the supply chain crew to show you how the agents collaborate to solve problems.
+
+### How to Run
+1. Make sure you have all the dependencies installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the interactive test script:
+   ```bash
+   python interactive_tests.py
+   ```
+
+### Showcase Code
+The code for the interactive showcase can be found in the `interactive_tests.py` file.
