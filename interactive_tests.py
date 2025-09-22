@@ -22,36 +22,36 @@ def run_interactive_session():
 
     # We will prepend this context to the task description to guide the agent.
     forecast_demand_task.description = (
-        f"Forecast product demand using the following information:\n"
-        f"- Historical Sales: {historical_data}\n"
+        f"Forecast product demand using the following information:\\n"
+        f"- Historical Sales: {historical_data}\\n"
         f"- Market Trends: {market_trends}"
     )
 
-    print("\nNext, the Inventory Manager Agent will adjust inventory levels.")
+    print("\\nNext, the Inventory Manager Agent will adjust inventory levels.")
     supply_constraints = input("Enter any supply constraints (e.g., 'supplier shipment delayed by 2 weeks'): ")
 
     manage_inventory_task.description = (
-        f"Adjust inventory levels based on demand forecasts and the following supply constraints:\n"
+        f"Adjust inventory levels based on demand forecasts and the following supply constraints:\\n"
         f"- Supply Constraints: {supply_constraints}"
     )
 
-    print("\nFinally, the Logistics Optimizer Agent will propose efficient shipping routes.")
+    print("\\nFinally, the Logistics Optimizer Agent will propose efficient shipping routes.")
     shipping_manifests = input("Enter a brief description of current shipping manifests (e.g., '3 trucks heading to the west coast'): ")
     vendor_relationships = input("Enter any details about vendor relationships (e.g., 'new partnership with a local carrier'): ")
 
     optimize_route_task.description = (
-        f"Analyze current shipping manifests and vendor relationships to propose new, efficient routes.\n"
-        f"- Shipping Manifests: {shipping_manifests}\n"
+        f"Analyze current shipping manifests and vendor relationships to propose new, efficient routes.\\n"
+        f"- Shipping Manifests: {shipping_manifests}\\n"
         f"- Vendor Relationships: {vendor_relationships}"
     )
 
-    print("\nRunning the supply chain crew with your inputs...")
+    print("\\nRunning the supply chain crew with your inputs...")
     print("="*60)
 
     # Run the crew with the updated tasks
-    results = supply_chain_crew.run()
+    results = supply_chain_crew.kickoff()
 
-    print("\nSupply Chain Optimization Results:")
+    print("\\nSupply Chain Optimization Results:")
     print("="*60)
     print(results)
     print("="*60)
