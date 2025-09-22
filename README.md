@@ -36,6 +36,22 @@ This solution uses a multi-agent system where specialized AI agents collaborate 
 ## Why This Matters
 Moving from single-purpose AI models to collaborative, intelligent agents is the next frontier in enterprise AI. This approach enables truly autonomous business processes that can handle complexity and deliver significant, measurable value.
 
+## UI-Based Showcase (New!)
+For a more user-friendly experience, we have created a web-based UI using Streamlit. This allows you to interact with the agents through a simple web form.
+
+### How to Run the UI
+1. Make sure you have all the dependencies installed:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the Streamlit application:
+   ```bash
+   streamlit run app.py
+   ```
+This will open a new tab in your browser with the interactive application.
+
+![Streamlit Showcase Screenshot](assets/showcase-screenshot.png)
+
 ## Interactive Showcase
 To see the agents in action, you can run the interactive showcase. This script will prompt you for inputs and then run the supply chain crew to show you how the agents collaborate to solve problems.
 
