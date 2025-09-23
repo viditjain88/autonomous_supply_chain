@@ -1,5 +1,3 @@
-
-
 # Autonomous Supply Chain
 
 ## Introduction
@@ -36,57 +34,18 @@ This solution uses a multi-agent system where specialized AI agents collaborate 
 ## Why This Matters
 Moving from single-purpose AI models to collaborative, intelligent agents is the next frontier in enterprise AI. This approach enables truly autonomous business processes that can handle complexity and deliver significant, measurable value.
 
-## Interactive Showcase
-To see the agents in action, you can run the interactive showcase. This script will prompt you for inputs and then run the supply chain crew to show you how the agents collaborate to solve problems.
+## 💉 COVID-19 Vaccine Distribution Showcase 💉
+For a more user-friendly experience, we have created a web-based UI using Streamlit. This allows you to interact with the agents through a simple web form, using a COVID-19 vaccine distribution use case.
 
-### How to Run
+### How to Run the UI
 1. Make sure you have all the dependencies installed:
    ```bash
    pip install -r requirements.txt
    ```
-2. Run the interactive test script:
+2. Run the Streamlit application:
    ```bash
-   python interactive_tests.py
+   streamlit run app.py
    ```
+This will open a new tab in your browser with the interactive application.
 
-### Showcase Code
-The code for the interactive showcase can be found in the `interactive_tests.py` file.
-
-### Sample Run
-Here is an example of what the interactive showcase looks like when you run it:
-
-```
-Welcome to the Autonomous Supply Chain Interactive Showcase!
-============================================================
-First, the Demand Forecaster Agent will predict future product demand.
-Enter a brief description of historical sales data (e.g., 'steady sales for the last 6 months'): Enter any relevant market trends (e.g., 'upcoming holiday season'):
-Next, the Inventory Manager Agent will adjust inventory levels.
-Enter any supply constraints (e.g., 'supplier shipment delayed by 2 weeks'):
-Finally, the Logistics Optimizer Agent will propose efficient shipping routes.
-Enter a brief description of current shipping manifests (e.g., '3 trucks heading to the west coast'): Enter any details about vendor relationships (e.g., 'new partnership with a local carrier'):
-Running the supply chain crew with your inputs...
-============================================================
-
-Supply Chain Optimization Results:
-============================================================
-
-Here is the result of the crew's work:
-
-**Demand Forecast Report**
-- Based on the 15% month-over-month growth, we project a 45% increase in demand for the next quarter.
-- The competitor going out of business is expected to increase our market share by 10%.
-- We recommend increasing production by 55% to meet the projected demand.
-
-**Inventory Adjustment Report**
-- The factory strike in Southeast Asia will cause a 2-week delay in our primary supply chain.
-- We recommend immediately sourcing from our secondary supplier in Mexico to mitigate the delay.
-- We also recommend increasing our safety stock by 20% for the next quarter.
-
-**Logistics Optimization Report**
-- The five cargo ships en route will arrive on schedule.
-- We have identified a new, more efficient shipping route through the Panama Canal that will save 3 days of transit time.
-- We recommend a mix of our domestic and new international partners to ensure a balance of cost and reliability.
-
-============================================================
-Thank you for using the Interactive Showcase!
-```
+![Streamlit Showcase Screenshot](assets/showcase-screenshot.png)
