@@ -37,3 +37,11 @@ inventory_agent = Agent(
     backstory='Experienced in inventory control and supply chain efficiency.',
     verbose=True
 )
+
+# Risk Management Agent
+risk_agent = Agent(
+    role='Risk Management Specialist',
+    goal='Identify potential supply chain disruptions and propose mitigation strategies.',
+    backstory='A seasoned risk analyst with a focus on global supply chain vulnerabilities and crisis management.',
+    verbose=True
+)
