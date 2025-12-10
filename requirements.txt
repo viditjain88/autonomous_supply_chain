@@ -1,4 +1,4 @@
-crewai
+google-generativeai
 langchain
 psycopg2-binary # If you have issues installing this, try `pip install psycopg2-binary`
 boto3

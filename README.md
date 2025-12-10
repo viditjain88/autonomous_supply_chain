@@ -26,26 +26,48 @@ This solution uses a multi-agent system where specialized AI agents collaborate 
 - 15% improvement in on-time delivery metrics during a simulated disruption event
 
 ## Tech Stack
-- CrewAI
-- LangChain
-- PostgreSQL
-- AWS SageMaker
+- Python 3.10+
+- Ollama (local LLM runner)
+- gemma3:4b (local LLM model)
+- Streamlit (optional UI)
 
 ## Why This Matters
 Moving from single-purpose AI models to collaborative, intelligent agents is the next frontier in enterprise AI. This approach enables truly autonomous business processes that can handle complexity and deliver significant, measurable value.
 
-## 💉 COVID-19 Vaccine Distribution Showcase 💉
-For a more user-friendly experience, we have created a web-based UI using Streamlit. This allows you to interact with the agents through a simple web form, using a COVID-19 vaccine distribution use case.
 
-### How to Run the UI
-1. Make sure you have all the dependencies installed:
+## How It Works (Local LLM)
+This project now uses a fully local LLM workflow powered by [Ollama](https://ollama.com/) and the `gemma3:4b` model. No cloud API keys or quotas are required.
+
+### Example Agent Outputs
+When you run the main application, you get:
+
+- **Demand Forecast**: Detailed, context-aware demand analysis and questions for further refinement.
+- **Inventory Management**: Step-by-step inventory review, safety stock recommendations, and requests for more data.
+- **Route Optimization**: In-depth logistics review, route modeling, and key questions for your team.
+- **Risk Assessment**: Categorized risk analysis, mitigation strategies, and next steps for supply chain resilience.
+
+### How to Run Locally
+1. Make sure you have [Ollama](https://ollama.com/) installed and running.
+2. Pull the required model (if not already present):
+   ```bash
+   ollama pull gemma3:4b
+   ```
+3. Install Python dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-2. Run the Streamlit application:
+4. Run the main application:
    ```bash
-   streamlit run app.py
+   python main.py
    ```
+
+You will see detailed agent outputs in your terminal, powered by your local LLM.
+
+---
+For a web-based UI, you can still use Streamlit:
+```bash
+streamlit run app.py
+```
 This will open a new tab in your browser with the interactive application.
 
 ![Streamlit Showcase Screenshot](assets/showcase-screenshot.png)
